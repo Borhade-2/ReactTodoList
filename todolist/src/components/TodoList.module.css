@@ -1,0 +1,47 @@
+.backdrop {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(0,0,0,0.75);
+}
+
+.modal{
+    position: absolute;
+    float: right;
+    top:10px;
+    right: 0;
+    /* left: 600px; */
+    width: 20px;
+    z-index: 100;
+    /* overflow: hidden; */
+}
+
+.header{
+    background: #4f005f;
+    padding: 0.5rem;
+}
+
+.header h2{
+    margin: 0;
+    color: white;
+}
+
+.content{
+    padding: 0.5rem;
+}
+
+.actions{
+    padding:  0.2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (min-width: 768px){
+    .modal {
+        left: calc(50% - 20rem);
+        width: 40rem;
+    }
+}
